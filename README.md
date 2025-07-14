@@ -73,5 +73,5 @@ There is no database — it does not save messages to a file or persistent stora
 
 This project allowed me to gain hands-on experience with full-stack web development using modern tools and technologies. I learned how to build a scalable real-time system using WebSockets and how to create an engaging frontend interface using React and CSS. The use of VS Code streamlined my workflow, and deploying the project on GitHub helped in managing versions and showcasing my work to others. This experience has enhanced my understanding of both frontend and backend development, as well as how to build real-world, real-time applications that solve practical problems.
 
-OUTPUT:
+OUTPUT: <img width="1340" height="630" alt="Image" src="https://github.com/user-attachments/assets/71021cce-bf8a-4ab7-977f-bd1a483f116e" />
 
