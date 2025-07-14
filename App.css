@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 90vw;          /* Increase width to 90% of the screen */
+  max-width: 900px;      /* Optional: allow wider max size */
+  height: 80vh;          /* Decrease height to 70% of screen */
+  background: #2c2f4a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.chat-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00ffe5;
+  text-shadow: 0 0 10px #00ffe5;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  background: #1e2139;
+  border-radius: 10px;
+  padding: 15px;
+  scroll-behavior: smooth;
+}
+
+.chat-message {
+  background: #3b3f68;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.chat-message strong {
+  display: block;
+  color: #00ffe5;
+  margin-bottom: 5px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background: #44486a;
+  color: #fff;
+}
+
+.chat-input input::placeholder {
+  color: #ccc;
+}
+
+.chat-input button {
+  background: #00ffe5;
+  color: #1f1f2e;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat-input button:hover {
+  background: #00bfa6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .App {
+    height: 95vh;
+    padding: 15px;
+  }
+
+  .chat-container h2 {
+    font-size: 22px;
+  }
+
+  .chat-message {
+    font-size: 14px;
+  }
+
+  .chat-input input {
+    font-size: 14px;
+  }
+
+  .chat-input button {
+    font-size: 14px;
+  }
+}
